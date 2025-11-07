@@ -117,7 +117,7 @@ def update_donor_info():
     db.close()
     print("✅ Donor information updated successfully.")
 
-#Deleting a donor
+#Deleting a donor from the dataset
 def delete_donor():
     uid = input("Enter donor UID to delete: ").strip()
     db = connect_db()
