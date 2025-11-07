@@ -60,7 +60,8 @@ def add_or_update_donor():
         WHERE Name=%s AND Contact_No=%s AND Age=%s
     """, (name, contact, age))
     result = cursor.fetchone()
-
+#Result is being displayed
+    
     if result:
         uid, last_donation_date = result
         print(f"\n🧾 Donor already registered with UID: {uid}")
@@ -70,7 +71,7 @@ def add_or_update_donor():
             print(f"\n✅ Donation date updated successfully for {name}!\n")
         else:
             print("❌ Donation not updated due to ineligibility.\n")
-
+#Chrcks the eligiblity
     else:
         if check_eligibility(age, None):
             cursor.execute("""
