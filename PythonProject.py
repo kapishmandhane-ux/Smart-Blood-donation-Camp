@@ -163,7 +163,7 @@ def delete_donor():
 # ---------- MAIN MENU ----------
 def main():
     while True:
-        print("\n=== 🩸 BLOOD DONATION MANAGEMENT SYSTEM ===")
+        print("\n==== 🩸 BLOOD DONATION MANAGEMENT SYSTEM ====")
         print("1. Add / Update Donor (Donation Date)")
         print("2. View All Donors")
         print("3. Update Donor Info (Contact/Age/Blood Group)")
