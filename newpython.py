@@ -1,7 +1,7 @@
 import mysql.connector
 from datetime import datetime, timedelta
 
-# ---------- DATABASE CONNECTION ----------
+# DATABASE CONNECTIONS
 def connect_db():
     return mysql.connector.connect(
         host="localhost",
